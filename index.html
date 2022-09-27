@@ -1,31 +1,27 @@
-    <!DOCTYPE html>
+     <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8"/>
-        <link rel="stylesheet" href="C:\Users\79914\Desktop\html\assets\style.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/web-3/css/style.css">
         <title>Задание 1</title>
     </head>
     <body>
+        <div class="main">
         <header class="header">
-                <div style="width:960px; padding: 10px; height:120px; margin: 0 auto;">
-                   <img style="float:left; margin:10px; width:100px; height:100px;" src="https://dtischencko.github.io/image.png" alt="">
+                <div class="header_cont">
+                   <img src="https://dtischencko.github.io/image.png" alt="">
                 
                     <div style=" padding:50px;">Index.html</div>
                     </div>  
         </header>
-        <nav class="nav container">
-            <ul class="nav link">
-                <li>
-                    <p> 
-                        <a href="#link" title="Список">Список  </a>
-                        <a href="#form" title="Нумерованный список гиперссылок">Форма  </a>   
-                        <a href="#footer">Подвал</a>
-                 </p>
-                </li>
-            </ul>
-        </nav>
-<div class="flex-box container">
-    <section class="link" id="link">
+        <nav>
+            <div><a href="#list">Список ссылок</a></div>
+            <div><a href="#form">Форма</a></div>
+            <div><a href="#footer">Подвал</a></div>
+          </nav>
+    <div class="link" id="link">
         <ol class="link list">
     <li>
         <a href="http://example.com">абсолютную гиперссылку на главную страницу сайта example.com</a>
@@ -124,42 +120,9 @@
  </li>
 
 </ol>
-</section>
-<table class="table" id="table">
-    <caption>
-        Таблица
-    </caption>
-    <tbody col span="3">
-        <tr>
-        <th>Колонка 1</th>
-        <th>Колонка 2</th>
-        <th>Колонка 3</th>
-      </tr>
-      <tr >
-        <td colspan="2" >Ячейка 11 объединенная с 12</td>
-        <td>Ячейка 13</td>
-      </tr>
-      <tr class="tab" >
-        <td>Ячейка 21</td>
-        <td>Ячейка 22</td>
-        <td>Ячейка 23</td>
-      </tr>
-      <tr class="tab" >
-        <td >Ячейка 31</td>
-        <td colspan="3">Ячейка 32 объединённая с 33</td>
-      </tr>
-      <tr >
-        <td>Ячейка 41</td>
-        <td>Ячейка 42</td>
-        <td rowspan="2">Ячейка 43 в объеднении с 53</td>
-      </tr>
-      <tr class="tab">
-        <td colspan="2" >Ячейка 51 в объединении с 52</td>
-      </tr>
-    </tbody>
-</table>
-<h2>Форма</h2>
-<form action="https://www.example.com" method="POST"  id="form">          
+</div>
+
+<form class="form" action="https://www.example.com" method="POST"  id="form">          
     <label>
            Имя:<br>
           <input name="field-name-1" placeholder="Николай" type="name">
@@ -196,15 +159,15 @@
           <br>
                Пол:<br>
                <label>
-                   <input type="radio" name="radio-group-1" value="М">
+                   <input type="radio" name="radio-group-2" value="М">
                    М
                </label>
                <label>
-                   <input type="radio" name="radio-group-1" value="Ж">
+                   <input type="radio" name="radio-group-2" value="Ж">
                    Ж
                </label>
                <label>
-                   <input type="radio" name="radio-group-1" value="Вертолёт">
+                   <input type="radio" name="radio-group-2" value="Вертолёт">
                    Вертолёт
                </label>
         
@@ -229,11 +192,46 @@
                </label><br>
                <input type="submit" value="Отправить">
            </form>
-</div>
+           <table class="table" id="table">
+            <caption>
+                Таблица
+            </caption>
+            <tbody col span="3">
+                <tr>
+                <th>Колонка 1</th>
+                <th>Колонка 2</th>
+                <th>Колонка 3</th>
+              </tr>
+              <tr >
+                <td colspan="2" >Ячейка 11 объединенная с 12</td>
+                <td>Ячейка 13</td>
+              </tr>
+              <tr class="tab" >
+                <td>Ячейка 21</td>
+                <td>Ячейка 22</td>
+                <td>Ячейка 23</td>
+              </tr>
+              <tr class="tab" >
+                <td >Ячейка 31</td>
+                <td colspan="3">Ячейка 32 объединённая с 33</td>
+              </tr>
+              <tr >
+                <td>Ячейка 41</td>
+                <td>Ячейка 42</td>
+                <td rowspan="2">Ячейка 43 в объеднении с 53</td>
+              </tr>
+              <tr class="tab">
+                <td colspan="2" >Ячейка 51 в объединении с 52</td>
+              </tr>
+            </tbody>
+        </table>
+        </div>
 <footer class="footer" id="footer">
     <div class="footer__inner">
         <span>(c) Николай Гавранек 2022</span>
     </div>
 </footer>
+
+</div>
     </body>
 </html>
