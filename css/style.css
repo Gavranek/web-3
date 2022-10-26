@@ -89,14 +89,14 @@
         margin: 0 auto;
         float: middle;
       }
-      .header_cont {
+      header_cont {
         min-height: 100px;
-        margin: 0 auto;
+        margin:  100px;
         width: 100%;
         padding: 15px 10px 0 10px;
         clear: both;
       }
-      .header_cont div {
+      header_cont div {
         display: inline-block;
         padding: 25px 0 0 10px;
       }
