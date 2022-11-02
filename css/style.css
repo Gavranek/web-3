@@ -136,6 +136,9 @@
       .main {
         display: flex;
       }
+      .link{
+        min-width: 960px;
+      }
       nav {
         flex-direction: row;
         height: 100px;
